@@ -14,6 +14,7 @@ Order::Order(int timeStamp, int expTime, string mealName, int numIngredients) : 
     Menu *m = new Menu;
     this->price=m->getFoodPrice(mealName,numIngredients);
     this->timeRequired=m->getPreparationTime(mealName,numIngredients);
+    this->id = timeStamp*7+1; //giving random id to order
 
 }
 int Order::getTimeStamp() const {
@@ -64,5 +65,17 @@ void Order::setTimeRequired(int timeRequired) {
 void Order::printDetails() {
     cout<<"Expiry: "<<this->expTime<<" - Meal: "<<this->mealName<<" - Ingredients: "<<this->numIngredients<<" - Prep.time: "<<this->timeRequired<<" - Price:"<<this->getPrice()<<endl;
 
+}
+
+int Order::getId() const {
+    return id;
+}
+
+void Order::setId(int id) {
+    Order::id = id;
+}
+
+void Order::setPrice(float price) {
+    Order::price = price;
 }
 

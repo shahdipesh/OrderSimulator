@@ -17,9 +17,11 @@ int main(int argc, char* argv[])
    FileReaderHelper *fileReaderHelper = new FileReaderHelper(argc,argv);
    fileReaderHelper->readNextLineFromFile("");
 
-//Order *o1 = new Order(1,2,"Pizza",3);
+//Order *o1 = new Order(4,2,"Pizza",3);
 //
 //Event *event = new ArrivalEvent(o1,12,1);
 //
-//cout<<event->getType();
+//cout<<event->getOrderDetails()->getId();
+
+
 }

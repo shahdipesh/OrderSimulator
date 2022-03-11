@@ -11,6 +11,7 @@ using namespace std;
 class Order {
 
 private:
+    int id;
    int timeStamp;
    int expTime;
    string mealName;
@@ -22,6 +23,12 @@ public:
     Order(int id, int expTime, string mealName, int numIngredients);
 
     void printDetails();
+
+    int getId() const;
+
+    void setId(int id);
+
+    void setPrice(float price);
 
     int getTimeStamp() const;
 
@@ -45,6 +52,8 @@ public:
     int getTimeRequired() const;
 
     void setTimeRequired(int timeRequired);
+
+
 
 };
 

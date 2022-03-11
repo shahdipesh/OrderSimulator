@@ -417,6 +417,30 @@ OrderQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueue.cpp.s
 .PHONY : OrderQueue.cpp.s
 
+OrderStack.o: OrderStack.cpp.o
+.PHONY : OrderStack.o
+
+# target to build an object file
+OrderStack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStack.cpp.o
+.PHONY : OrderStack.cpp.o
+
+OrderStack.i: OrderStack.cpp.i
+.PHONY : OrderStack.i
+
+# target to preprocess a source file
+OrderStack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStack.cpp.i
+.PHONY : OrderStack.cpp.i
+
+OrderStack.s: OrderStack.cpp.s
+.PHONY : OrderStack.s
+
+# target to generate assembly for a file
+OrderStack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStack.cpp.s
+.PHONY : OrderStack.cpp.s
+
 PriorityQueue.o: PriorityQueue.cpp.o
 .PHONY : PriorityQueue.o
 
@@ -534,6 +558,9 @@ help:
 	@echo "... OrderQueue.o"
 	@echo "... OrderQueue.i"
 	@echo "... OrderQueue.s"
+	@echo "... OrderStack.o"
+	@echo "... OrderStack.i"
+	@echo "... OrderStack.s"
 	@echo "... PriorityQueue.o"
 	@echo "... PriorityQueue.i"
 	@echo "... PriorityQueue.s"

@@ -22,9 +22,9 @@ void OrderQueue::handleOrderEvent(Event *event,LinkedList *eventList) {
 }
 
 void OrderQueue::handleArrivalEvent(Event *event,LinkedList *eventList) {
-    cout<<"Time :"<<this->currentTime<<" FoodOrder "<<itemsInQueue+1<<" arrives ->"; event->getOrderDetails()->printDetails();
+    cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" arrives ->"; event->getOrderDetails()->printDetails();
     if(this->itemsInQueue==0){
-        cout<<"Time :"<<this->currentTime<<" FoodOrder "<<this->itemsInQueue+1<<" is getting prepared"<<endl;
+        cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" is getting prepared"<<endl;
         int completionTime =  this->currentTime+event->getOrderDetails()->getTimeRequired();
         Event *completionEvent = new CompletionEvent(event->getOrderDetails(),completionTime,event->getSimulation());
         eventList->insert(completionEvent);
@@ -36,7 +36,7 @@ void OrderQueue::handleArrivalEvent(Event *event,LinkedList *eventList) {
 void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
     this->currentNumOfCompletedOrders++;
     this->totalRevenue+=event->getOrderDetails()->getPrice();
-    cout<<"Time :"<<this->currentTime<<" FoodOrder "<<currentNumOfCompletedOrders<<" has been served ->"
+    cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" has been served ->"
     <<"Revenue grew by: "<<event->getOrderDetails()->getPrice()<<endl;
     this->listOfEvents->remove();
     if( this->listOfEvents->isEmpty()==0) {
@@ -58,7 +58,7 @@ void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
             Event *completionEvent = new CompletionEvent(nextEventToProcess->getOrderDetails(), completionTime,
                                                          nextEventToProcess->getSimulation());
             eventList->insert(completionEvent);
-            cout << "Time :" << this->currentTime << " FoodOrder " << this->currentNumOfCompletedOrders + 1
+            cout << "Time :" << this->currentTime << " FoodOrder with orderId ->@" << nextEventToProcess->getOrderDetails()->getId()
                  << " is getting prepared" << endl;
         }
     }

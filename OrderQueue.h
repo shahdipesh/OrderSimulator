@@ -15,6 +15,7 @@ private:
     int currentTime;
     int currentNumOfCompletedOrders;
     float totalRevenue;
+
 public:
     OrderQueue();
     void handleOrderEvent(Event *event,LinkedList *eventList);

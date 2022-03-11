@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/dipeshasd/CLionProjects/untitled17/Order.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/Order.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/OrderHandler.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/OrderHandler.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/OrderQueue.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/OrderQueue.cpp.o"
+  "/Users/dipeshasd/CLionProjects/untitled17/OrderStack.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/OrderStack.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/PriorityQueue.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/PriorityQueue.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/Queue.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/Queue.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/main.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/main.cpp.o"

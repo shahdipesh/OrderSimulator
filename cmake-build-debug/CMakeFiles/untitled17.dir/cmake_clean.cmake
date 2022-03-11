@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled17.dir/Order.cpp.o"
   "CMakeFiles/untitled17.dir/OrderHandler.cpp.o"
   "CMakeFiles/untitled17.dir/OrderQueue.cpp.o"
+  "CMakeFiles/untitled17.dir/OrderStack.cpp.o"
   "CMakeFiles/untitled17.dir/PriorityQueue.cpp.o"
   "CMakeFiles/untitled17.dir/Queue.cpp.o"
   "CMakeFiles/untitled17.dir/main.cpp.o"
