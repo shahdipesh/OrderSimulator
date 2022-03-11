@@ -6,6 +6,7 @@
 
 
 #include "LinkedList.h"
+#include "FileReaderHelper.h"
 
 class EventList {
 private:
@@ -13,7 +14,7 @@ private:
 public:
     EventList(); //constructor
 
-    void processEvent();
+    void processEvent(FileReaderHelper *fileReaderHelper);
 
     LinkedList *getEventList() ; //getter
 

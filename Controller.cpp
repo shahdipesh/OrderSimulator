@@ -13,17 +13,17 @@
 #include "EventList.h"
 
 
-void Controller::handleMessage(int id, int time, string mealName, int numIngredients,int version, FileReaderHelper *fileReaderHelper) {
+void Controller::handleMessage(int id, int expiryTime, string mealName, int numIngredients,int version, FileReaderHelper *fileReaderHelper) {
 
 
 
-   Order *order = new Order(id,time,mealName,numIngredients);
+   Order *order = new Order(id,expiryTime,mealName,numIngredients);
 
-   ArrivalEvent *event = new ArrivalEvent(order,time,version);
+   ArrivalEvent *event = new ArrivalEvent(order,id,version);
 
    EventList *eventList = new EventList;
    eventList->getEventList()->insert(event);
-   eventList->processEvent();
+   eventList->processEvent(fileReaderHelper);
 
 
 

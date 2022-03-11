@@ -21,6 +21,8 @@ private:
 public:
     Order(int id, int expTime, string mealName, int numIngredients);
 
+    void printDetails();
+
     int getId() const;
 
     void setId(int id);

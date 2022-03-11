@@ -11,6 +11,7 @@
 class LinkedList {
 private:
     Node *top;
+    int size;
 public:
     LinkedList();
     virtual void print();
@@ -19,6 +20,10 @@ public:
     virtual Node* remove();
     virtual Node *getTop();
     virtual void setTop(Node *top);
+
+    int getSize() const;
+
+    void setSize(int size);
 
 };
 

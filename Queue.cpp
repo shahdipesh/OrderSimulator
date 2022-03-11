@@ -18,6 +18,7 @@ void Queue::insert(Event *event) {
         curr=curr->getNext();
     }
     curr->setNext(node);
+    this->setSize(this->getSize()+1);
 }
 
 

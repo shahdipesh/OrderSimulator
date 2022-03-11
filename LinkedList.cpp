@@ -5,7 +5,7 @@
 #include "LinkedList.h"
 #include <iostream>
 
-LinkedList::LinkedList() : top(nullptr) {}
+LinkedList::LinkedList() : top(nullptr),size(0) {}
 
 void LinkedList::print() {
     Node *top =this->top;
@@ -41,4 +41,12 @@ Node *LinkedList::remove() {
             this->setTop(this->getTop()->getNext());
         }
         return curr;
+}
+
+int LinkedList::getSize() const {
+    return size;
+}
+
+void LinkedList::setSize(int size) {
+    LinkedList::size = size;
 }

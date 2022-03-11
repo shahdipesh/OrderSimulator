@@ -8,10 +8,19 @@
 
 #include "Queue.h"
 
-class OrderQueue:public Queue {
+class OrderQueue {
 private:
-    LinkedList *listOfOrders;
+    LinkedList *listOfEvents;
+    int itemsInQueue;
+    int currentTime;
+    int currentNumOfCompletedOrders;
+public:
+    OrderQueue();
+    void handleOrderEvent(Event *event);
 
+private:
+    void handleArrivalEvent(Event *event);
+    void handleCompleteEvent(Event *event);
 };
 
 

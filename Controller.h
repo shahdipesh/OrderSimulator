@@ -12,7 +12,7 @@ class FileReaderHelper;
 
 class Controller {
 public:
-    void handleMessage(int id,int time,string mealName,int numIngredients,int version,FileReaderHelper *fileReaderHelper);
+    void handleMessage(int id,int expiryTime,string mealName,int numIngredients,int version,FileReaderHelper *fileReaderHelper);
 };
 
 

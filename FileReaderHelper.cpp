@@ -3,6 +3,7 @@
 #include <sstream>
 #include "iostream"
 #include "Controller.h"
+#include "ArrivalEvent.h"
 
 using namespace std;
 
@@ -57,11 +58,46 @@ int FileReaderHelper::readNextLineFromFile(string line) {
         //To show that we grabbed all the relevant information:
 //        cout << "time=" << time << " expiry=" << expiry << " meal=" << meal << " numIngredients=" << numIngredients << endl;
         Controller *controller = new Controller();
-        controller->handleMessage(time,time,meal,numIngredients,this->version,this);
+        controller->handleMessage(time,expiry,meal,numIngredients,this->version,this);
         return 1;
     }
     else{
         return 0;
+    }
+
+
+
+}
+
+Event *FileReaderHelper::createNewEventFromNextLine(string line,int simulation) {
+    if(getline(inputFile, line))  //gets the next line from the file and saves it in 'line', if there is one
+    {
+        stringstream sst(
+                line);  //stringstream allows us to parse the line token by token (kind of like a Scanner in Java)
+        string token;
+        int counter = 0;
+        int time = 0;
+        int expiry = 0;
+        string meal = "";
+        int numIngredients = 0;
+
+        while (sst >> token)  //grabing one token at a time, until there is no token left
+        {
+            if (counter == 0) //reading time
+                time = stoi(token);
+            else if (counter == 1) //reading expiry
+                expiry = stoi(token);
+            else if (counter == 2) //reading meal type
+                meal = token;
+            else //counting ingredients from here (if counter > 2)
+            {
+                numIngredients++;
+            }
+            counter++;
+        }
+        Order *order = new Order(time,expiry,meal,numIngredients);
+        Event *event = new ArrivalEvent(order,simulation,order->getId());
+        return event;
     }
 
 }

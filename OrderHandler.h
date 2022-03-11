@@ -7,6 +7,8 @@
 
 #include "Event.h"
 #include "LinkedList.h"
+#include "FileReaderHelper.h"
+#include "OrderQueue.h"
 
 class OrderHandler {
 private:
@@ -14,7 +16,7 @@ private:
 public:
     OrderHandler();
     void insert(Event *e);
-    void processOrder();
+    void processOrder(LinkedList *eventList,FileReaderHelper *fileReaderHelper,OrderQueue *orderQueue);
 
 };
 

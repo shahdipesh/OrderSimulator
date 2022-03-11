@@ -5,6 +5,8 @@
 #include "OrderHandler.h"
 #include "Queue.h"
 #include "iostream"
+#include "OrderQueue.h"
+#include "FileReaderHelper.h"
 
 OrderHandler::OrderHandler() : orderToHandleList(new Queue) {}
 
@@ -13,18 +15,20 @@ void OrderHandler::insert(Event *e) {
 
 }
 
-void OrderHandler::processOrder() {
+void OrderHandler::processOrder(LinkedList *eventList,FileReaderHelper *fileReaderHelper,OrderQueue *orderQueue) {
     Node *removedNode = this->orderToHandleList->remove();
     Event *removedEvent = removedNode->getData();
 
-    //Create order queue
-    //if type arrival then insert there
-    //insertion result tells if the insertion was the first insertion
 
+    //simulation 1 handle arrival event
+    if(removedEvent->getSimulation()==1){
+        orderQueue->handleOrderEvent(removedEvent);
+        Event *newEventToAdd = fileReaderHelper->createNewEventFromNextLine("",removedEvent->getSimulation());
+        //check if there are further texts in the file
+        if(newEventToAdd->getOrderDetails()->getTimeRequired()!=-1) {
+            eventList->insert(newEventToAdd);
+        }
 
-    //simulation 1
-//    if(removedEvent->getType()=="arrival" && removedEvent->getSimulation()==1){
-//
-//    }
+    }
 
 }

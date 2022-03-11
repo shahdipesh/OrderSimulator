@@ -5,6 +5,7 @@
 #include "Order.h"
 #include "Menu.h"
 #include <utility>
+#include "iostream"
 using namespace std;
 
 Order::Order(int id, int expTime, string mealName, int numIngredients) : id(id), expTime(expTime),
@@ -59,3 +60,9 @@ int Order::getTimeRequired() const {
 void Order::setTimeRequired(int timeRequired) {
     Order::timeRequired = timeRequired;
 }
+
+void Order::printDetails() {
+    cout<<"Expiry: "<<this->expTime<<" - Meal: "<<this->mealName<<" - Ingredients: "<<this->numIngredients<<" - Prep.time: "<<this->timeRequired<<" - Price:"<<this->getPrice()<<endl;
+
+}
+

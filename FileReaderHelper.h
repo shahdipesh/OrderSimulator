@@ -8,6 +8,7 @@
 
 #include <fstream>
 #include <string>
+#include "Event.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ private:
 public:
      FileReaderHelper(int argc, char* argv[]);
     int readNextLineFromFile(std::string line);
+    Event *createNewEventFromNextLine(string line,int simulation);
 };
 
 

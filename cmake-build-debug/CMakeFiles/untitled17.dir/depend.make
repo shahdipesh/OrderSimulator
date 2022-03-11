@@ -30,15 +30,21 @@ CMakeFiles/untitled17.dir/EventList.cpp.o: \
  ../Event.h \
  ../EventList.cpp \
  ../EventList.h \
+ ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
  ../OrderHandler.h \
- ../PriorityQueue.h
+ ../OrderQueue.h \
+ ../PriorityQueue.h \
+ ../Queue.h
 CMakeFiles/untitled17.dir/FileReaderHelper.cpp.o: \
+ ../ArrivalEvent.h \
  ../Controller.h \
+ ../Event.h \
  ../FileReaderHelper.cpp \
- ../FileReaderHelper.h
+ ../FileReaderHelper.h \
+ ../Order.h
 CMakeFiles/untitled17.dir/LinkedList.cpp.o: \
  ../Event.h \
  ../LinkedList.cpp \
@@ -59,11 +65,21 @@ CMakeFiles/untitled17.dir/Order.cpp.o: \
  ../Order.h
 CMakeFiles/untitled17.dir/OrderHandler.cpp.o: \
  ../Event.h \
+ ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
  ../OrderHandler.cpp \
  ../OrderHandler.h \
+ ../OrderQueue.h \
+ ../Queue.h
+CMakeFiles/untitled17.dir/OrderQueue.cpp.o: \
+ ../Event.h \
+ ../LinkedList.h \
+ ../Node.h \
+ ../Order.h \
+ ../OrderQueue.cpp \
+ ../OrderQueue.h \
  ../Queue.h
 CMakeFiles/untitled17.dir/PriorityQueue.cpp.o: \
  ../Event.h \
