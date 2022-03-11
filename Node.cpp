@@ -18,6 +18,6 @@ Node *Node::getNext() const {
     return this->next;
 }
 
-void Node::setNext(Node *next) {
-    Node::next = next;
+void Node::setNext(Node *nxt) {
+    this->next = nxt;
 }

@@ -4,4 +4,4 @@
 
 #include "CompletionEvent.h"
 
-CompletionEvent::CompletionEvent(Order *orderDetails, int time,int simulation) : Event("complete", orderDetails, time,simulation) {}
+CompletionEvent::CompletionEvent(Order *orderDetails, int time,int simulation) : Event("complete", orderDetails, simulation,time) {}

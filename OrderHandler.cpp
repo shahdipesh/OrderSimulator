@@ -22,10 +22,10 @@ void OrderHandler::processOrder(LinkedList *eventList,FileReaderHelper *fileRead
 
     //simulation 1 handle arrival event
     if(removedEvent->getSimulation()==1){
-        orderQueue->handleOrderEvent(removedEvent);
+        orderQueue->handleOrderEvent(removedEvent,eventList);
         Event *newEventToAdd = fileReaderHelper->createNewEventFromNextLine("",removedEvent->getSimulation());
         //check if there are further texts in the file
-        if(newEventToAdd->getOrderDetails()->getTimeRequired()!=-1) {
+        if(newEventToAdd!=nullptr) {
             eventList->insert(newEventToAdd);
         }
 

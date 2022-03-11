@@ -8,20 +8,20 @@
 #include "iostream"
 using namespace std;
 
-Order::Order(int id, int expTime, string mealName, int numIngredients) : id(id), expTime(expTime),
-                                                                                mealName(mealName),
-                                                                                numIngredients(numIngredients) {
+Order::Order(int timeStamp, int expTime, string mealName, int numIngredients) : timeStamp(timeStamp), expTime(expTime),
+                                                                         mealName(mealName),
+                                                                         numIngredients(numIngredients) {
     Menu *m = new Menu;
     this->price=m->getFoodPrice(mealName,numIngredients);
     this->timeRequired=m->getPreparationTime(mealName,numIngredients);
 
 }
-int Order::getId() const {
-    return id;
+int Order::getTimeStamp() const {
+    return timeStamp;
 }
 
-void Order::setId(int id) {
-    Order::id = id;
+void Order::setTimeStamp(int id) {
+    Order::timeStamp = id;
 }
 
 int Order::getExpTime() const {

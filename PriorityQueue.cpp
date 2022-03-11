@@ -16,8 +16,14 @@ void PriorityQueue::insert(Event *event) {
           prev=curr;
           curr = curr->getNext();
       }
-      prev->setNext(node);
-      node->setNext(curr);
+      if(prev!=nullptr) {
+          prev->setNext(node);
+          node->setNext(curr);
+      }
+      else{
+          node->setNext(this->getTop());
+          this->setTop(node);
+      }
   }
 
 }

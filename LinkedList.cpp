@@ -10,7 +10,7 @@ LinkedList::LinkedList() : top(nullptr),size(0) {}
 void LinkedList::print() {
     Node *top =this->top;
     while(top != nullptr){
-        cout<<top->getData()->getOrderDetails()->getId()<<"--->";
+        cout << top->getData()->getOrderDetails()->getTimeStamp() << "--->";
         top=top->getNext();
     }
     cout<<endl;

@@ -72,8 +72,7 @@ int FileReaderHelper::readNextLineFromFile(string line) {
 Event *FileReaderHelper::createNewEventFromNextLine(string line,int simulation) {
     if(getline(inputFile, line))  //gets the next line from the file and saves it in 'line', if there is one
     {
-        stringstream sst(
-                line);  //stringstream allows us to parse the line token by token (kind of like a Scanner in Java)
+        stringstream sst(line);  //stringstream allows us to parse the line token by token (kind of like a Scanner in Java)
         string token;
         int counter = 0;
         int time = 0;
@@ -95,9 +94,17 @@ Event *FileReaderHelper::createNewEventFromNextLine(string line,int simulation) 
             }
             counter++;
         }
-        Order *order = new Order(time,expiry,meal,numIngredients);
-        Event *event = new ArrivalEvent(order,simulation,order->getId());
-        return event;
+        if(counter>0) {
+            Order *order = new Order(time, expiry, meal, numIngredients);
+            Event *event = new ArrivalEvent(order, simulation, order->getTimeStamp());
+            return event;
+        }
+        else{
+            return nullptr;
+        }
+    }
+    else{
+        return nullptr;
     }
 
 }

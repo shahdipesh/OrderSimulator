@@ -14,13 +14,14 @@ private:
     int itemsInQueue;
     int currentTime;
     int currentNumOfCompletedOrders;
+    float totalRevenue;
 public:
     OrderQueue();
-    void handleOrderEvent(Event *event);
+    void handleOrderEvent(Event *event,LinkedList *eventList);
 
 private:
-    void handleArrivalEvent(Event *event);
-    void handleCompleteEvent(Event *event);
+    void handleArrivalEvent(Event *event,LinkedList *eventList);
+    void handleCompleteEvent(Event *event,LinkedList *eventList);
 };
 
 
