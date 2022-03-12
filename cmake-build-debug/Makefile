@@ -393,77 +393,77 @@ OrderHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderHandler.cpp.s
 .PHONY : OrderHandler.cpp.s
 
-OrderProfit.o: OrderProfit.cpp.o
-.PHONY : OrderProfit.o
+OrderProfitSimulator.o: OrderProfitSimulator.cpp.o
+.PHONY : OrderProfitSimulator.o
 
 # target to build an object file
-OrderProfit.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfit.cpp.o
-.PHONY : OrderProfit.cpp.o
+OrderProfitSimulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o
+.PHONY : OrderProfitSimulator.cpp.o
 
-OrderProfit.i: OrderProfit.cpp.i
-.PHONY : OrderProfit.i
+OrderProfitSimulator.i: OrderProfitSimulator.cpp.i
+.PHONY : OrderProfitSimulator.i
 
 # target to preprocess a source file
-OrderProfit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfit.cpp.i
-.PHONY : OrderProfit.cpp.i
+OrderProfitSimulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.i
+.PHONY : OrderProfitSimulator.cpp.i
 
-OrderProfit.s: OrderProfit.cpp.s
-.PHONY : OrderProfit.s
+OrderProfitSimulator.s: OrderProfitSimulator.cpp.s
+.PHONY : OrderProfitSimulator.s
 
 # target to generate assembly for a file
-OrderProfit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfit.cpp.s
-.PHONY : OrderProfit.cpp.s
+OrderProfitSimulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.s
+.PHONY : OrderProfitSimulator.cpp.s
 
-OrderQueue.o: OrderQueue.cpp.o
-.PHONY : OrderQueue.o
+OrderQueueSimulator.o: OrderQueueSimulator.cpp.o
+.PHONY : OrderQueueSimulator.o
 
 # target to build an object file
-OrderQueue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueue.cpp.o
-.PHONY : OrderQueue.cpp.o
+OrderQueueSimulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o
+.PHONY : OrderQueueSimulator.cpp.o
 
-OrderQueue.i: OrderQueue.cpp.i
-.PHONY : OrderQueue.i
+OrderQueueSimulator.i: OrderQueueSimulator.cpp.i
+.PHONY : OrderQueueSimulator.i
 
 # target to preprocess a source file
-OrderQueue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueue.cpp.i
-.PHONY : OrderQueue.cpp.i
+OrderQueueSimulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.i
+.PHONY : OrderQueueSimulator.cpp.i
 
-OrderQueue.s: OrderQueue.cpp.s
-.PHONY : OrderQueue.s
+OrderQueueSimulator.s: OrderQueueSimulator.cpp.s
+.PHONY : OrderQueueSimulator.s
 
 # target to generate assembly for a file
-OrderQueue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueue.cpp.s
-.PHONY : OrderQueue.cpp.s
+OrderQueueSimulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.s
+.PHONY : OrderQueueSimulator.cpp.s
 
-OrderStack.o: OrderStack.cpp.o
-.PHONY : OrderStack.o
+OrderStackSimulator.o: OrderStackSimulator.cpp.o
+.PHONY : OrderStackSimulator.o
 
 # target to build an object file
-OrderStack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStack.cpp.o
-.PHONY : OrderStack.cpp.o
+OrderStackSimulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o
+.PHONY : OrderStackSimulator.cpp.o
 
-OrderStack.i: OrderStack.cpp.i
-.PHONY : OrderStack.i
+OrderStackSimulator.i: OrderStackSimulator.cpp.i
+.PHONY : OrderStackSimulator.i
 
 # target to preprocess a source file
-OrderStack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStack.cpp.i
-.PHONY : OrderStack.cpp.i
+OrderStackSimulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.i
+.PHONY : OrderStackSimulator.cpp.i
 
-OrderStack.s: OrderStack.cpp.s
-.PHONY : OrderStack.s
+OrderStackSimulator.s: OrderStackSimulator.cpp.s
+.PHONY : OrderStackSimulator.s
 
 # target to generate assembly for a file
-OrderStack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStack.cpp.s
-.PHONY : OrderStack.cpp.s
+OrderStackSimulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.s
+.PHONY : OrderStackSimulator.cpp.s
 
 PriorityQueue.o: PriorityQueue.cpp.o
 .PHONY : PriorityQueue.o
@@ -651,15 +651,15 @@ help:
 	@echo "... OrderHandler.o"
 	@echo "... OrderHandler.i"
 	@echo "... OrderHandler.s"
-	@echo "... OrderProfit.o"
-	@echo "... OrderProfit.i"
-	@echo "... OrderProfit.s"
-	@echo "... OrderQueue.o"
-	@echo "... OrderQueue.i"
-	@echo "... OrderQueue.s"
-	@echo "... OrderStack.o"
-	@echo "... OrderStack.i"
-	@echo "... OrderStack.s"
+	@echo "... OrderProfitSimulator.o"
+	@echo "... OrderProfitSimulator.i"
+	@echo "... OrderProfitSimulator.s"
+	@echo "... OrderQueueSimulator.o"
+	@echo "... OrderQueueSimulator.i"
+	@echo "... OrderQueueSimulator.s"
+	@echo "... OrderStackSimulator.o"
+	@echo "... OrderStackSimulator.i"
+	@echo "... OrderStackSimulator.s"
 	@echo "... PriorityQueue.o"
 	@echo "... PriorityQueue.i"
 	@echo "... PriorityQueue.s"

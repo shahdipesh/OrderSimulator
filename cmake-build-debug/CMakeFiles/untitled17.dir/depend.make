@@ -35,9 +35,9 @@ CMakeFiles/untitled17.dir/EventList.cpp.o: \
  ../Node.h \
  ../Order.h \
  ../OrderHandler.h \
- ../OrderProfit.h \
- ../OrderQueue.h \
- ../OrderStack.h \
+ ../OrderProfitSimulator.h \
+ ../OrderQueueSimulator.h \
+ ../OrderStackSimulator.h \
  ../PriorityQueue.h \
  ../ProfitQueue.h \
  ../Queue.h \
@@ -76,39 +76,39 @@ CMakeFiles/untitled17.dir/OrderHandler.cpp.o: \
  ../Order.h \
  ../OrderHandler.cpp \
  ../OrderHandler.h \
- ../OrderQueue.h \
+ ../OrderQueueSimulator.h \
  ../Queue.h \
  ../Simulation.h
-CMakeFiles/untitled17.dir/OrderProfit.cpp.o: \
+CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
- ../OrderProfit.cpp \
- ../OrderProfit.h \
+ ../OrderProfitSimulator.cpp \
+ ../OrderProfitSimulator.h \
  ../PriorityQueue.h \
  ../ProfitQueue.h \
  ../Simulation.h \
  ../Stack.h
-CMakeFiles/untitled17.dir/OrderQueue.cpp.o: \
+CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
- ../OrderQueue.cpp \
- ../OrderQueue.h \
+ ../OrderQueueSimulator.cpp \
+ ../OrderQueueSimulator.h \
  ../Queue.h \
  ../Simulation.h
-CMakeFiles/untitled17.dir/OrderStack.cpp.o: \
+CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
- ../OrderStack.cpp \
- ../OrderStack.h \
+ ../OrderStackSimulator.cpp \
+ ../OrderStackSimulator.h \
  ../Simulation.h \
  ../Stack.h
 CMakeFiles/untitled17.dir/PriorityQueue.cpp.o: \

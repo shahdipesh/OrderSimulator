@@ -2,15 +2,14 @@
 // Created by Dipesh Asd on 2022-03-10.
 //
 
-#ifndef UNTITLED17_ORDERQUEUE_H
-#define UNTITLED17_ORDERQUEUE_H
+#pragma once
 
 
 #include "Queue.h"
 #include "Simulation.h"
 
 
-class OrderQueue: public Simulation {
+class OrderQueueSimulator: public Simulation {
 private:
     LinkedList *listOfEvents;
     int itemsInQueue;
@@ -19,9 +18,9 @@ private:
     float totalRevenue;
 
 public:
-    OrderQueue();
+    OrderQueueSimulator();
     void handleOrderEvent(Event *event,LinkedList *eventList) override;
-    void print() override;
+
 
 private:
     void handleArrivalEvent(Event *event,LinkedList *eventList);
@@ -29,4 +28,3 @@ private:
 };
 
 
-#endif //UNTITLED17_ORDERQUEUE_H

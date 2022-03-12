@@ -8,7 +8,7 @@
 #include "Event.h"
 #include "LinkedList.h"
 #include "FileReaderHelper.h"
-#include "OrderQueue.h"
+#include "OrderQueueSimulator.h"
 
 class OrderHandler {
 private:

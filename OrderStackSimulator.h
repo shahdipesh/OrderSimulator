@@ -2,27 +2,26 @@
 // Created by Dipesh Asd on 2022-03-11.
 //
 
-#ifndef UNTITLED17_ORDERSTACK_H
-#define UNTITLED17_ORDERSTACK_H
+#ifndef UNTITLED17_ORDERSTACKSIMULATOR_H
+#define UNTITLED17_ORDERSTACKSIMULATOR_H
 
 
 #include "LinkedList.h"
 #include "Simulation.h"
 #include "Stack.h"
 
-class OrderStack: public Simulation {
+class OrderStackSimulator: public Simulation {
 
     private:
-        Stack *listOfEvents;
+        LinkedList *listOfEvents;
         int itemsInQueue;
         int currentTime;
         int currentNumOfCompletedOrders;
         float totalRevenue;
 
     public:
-        OrderStack();
+        OrderStackSimulator();
         void handleOrderEvent(Event *event,LinkedList *eventList) override;
-        void print() override;
 
     private:
         void handleArrivalEvent(Event *event,LinkedList *eventList);
@@ -31,4 +30,4 @@ class OrderStack: public Simulation {
 };
 
 
-#endif //UNTITLED17_ORDERSTACK_H
+#endif //UNTITLED17_ORDERSTACKSIMULATOR_H

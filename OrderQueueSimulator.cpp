@@ -2,14 +2,14 @@
 // Created by Dipesh Asd on 2022-03-10.
 //
 
-#include "OrderQueue.h"
+#include "OrderQueueSimulator.h"
 #include "iostream"
 #include "CompletionEvent.h"
 
 
-OrderQueue::OrderQueue() : listOfEvents(new Queue),itemsInQueue(0),currentTime(0),currentNumOfCompletedOrders(0),totalRevenue(0) {}
+OrderQueueSimulator::OrderQueueSimulator() : listOfEvents(new Queue),itemsInQueue(0),currentTime(0),currentNumOfCompletedOrders(0),totalRevenue(0) {}
 
-void OrderQueue::handleOrderEvent(Event *event,LinkedList *eventList) {
+void OrderQueueSimulator::handleOrderEvent(Event *event,LinkedList *eventList) {
     this->currentTime = event->getTime();
     if(event->getType()=="arrival"){
        handleArrivalEvent(event,eventList);
@@ -21,7 +21,7 @@ void OrderQueue::handleOrderEvent(Event *event,LinkedList *eventList) {
 
 }
 
-void OrderQueue::handleArrivalEvent(Event *event,LinkedList *eventList) {
+void OrderQueueSimulator::handleArrivalEvent(Event *event,LinkedList *eventList) {
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" arrives ->"; event->getOrderDetails()->printDetails();
     if(this->itemsInQueue==0){
         cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" is getting prepared"<<endl;
@@ -33,19 +33,19 @@ void OrderQueue::handleArrivalEvent(Event *event,LinkedList *eventList) {
     itemsInQueue++;
 }
 
-void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
+void OrderQueueSimulator::handleCompleteEvent(Event *event,LinkedList *eventList) {
     this->currentNumOfCompletedOrders++;
     this->totalRevenue+=event->getOrderDetails()->getPrice();
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" has been served ->"
     <<"Revenue grew by: "<<event->getOrderDetails()->getPrice()<<endl;
-    this->listOfEvents->remove();
+    this->listOfEvents->findAndRemove(event->getOrderDetails()->getId());
     if( this->listOfEvents->isEmpty()==0) {
         Node *currentNode = this->listOfEvents->getTop();
         int nextNodeIsValid = 0;
         while (currentNode != nullptr && nextNodeIsValid == 0) {
             if (currentNode->getData()->getOrderDetails()->getExpTime() < this->currentTime) {
-                Node *res = this->listOfEvents->remove();
-                currentNode = res->getNext();
+                this->listOfEvents->findAndRemove(currentNode->getData()->getOrderDetails()->getId());
+                currentNode = currentNode->getNext();
             } else {
                 nextNodeIsValid = 1;
                 currentNode = currentNode->getNext();
@@ -71,10 +71,6 @@ void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
         cout<<"- Total revenue: "<<this->totalRevenue<<endl;
 
     }
-}
-
-void OrderQueue::print() {
-
 }
 
 

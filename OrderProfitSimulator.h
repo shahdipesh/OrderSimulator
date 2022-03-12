@@ -7,19 +7,18 @@
 #include "PriorityQueue.h"
 #include "ProfitQueue.h"
 
-class OrderProfit:public Simulation {
+class OrderProfitSimulator:public Simulation {
 
 private:
-    ProfitQueue *listOfEvents;
+    LinkedList *listOfEvents;
     int itemsInQueue;
     int currentTime;
     int currentNumOfCompletedOrders;
     float totalRevenue;
 
 public:
-    OrderProfit();
+    OrderProfitSimulator();
     void handleOrderEvent(Event *event,LinkedList *eventList) override;
-    void print() override;
 
 private:
     void handleArrivalEvent(Event *event,LinkedList *eventList);

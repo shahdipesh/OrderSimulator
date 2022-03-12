@@ -248,31 +248,31 @@ CMakeFiles/untitled17.dir/OrderHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderHandler.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderHandler.cpp -o CMakeFiles/untitled17.dir/OrderHandler.cpp.s
 
-CMakeFiles/untitled17.dir/OrderQueue.cpp.o: CMakeFiles/untitled17.dir/flags.make
-CMakeFiles/untitled17.dir/OrderQueue.cpp.o: ../OrderQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/untitled17.dir/OrderQueue.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled17.dir/OrderQueue.cpp.o -c /Users/dipeshasd/CLionProjects/untitled17/OrderQueue.cpp
+CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o: CMakeFiles/untitled17.dir/flags.make
+CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o: ../OrderQueueSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o -c /Users/dipeshasd/CLionProjects/untitled17/OrderQueueSimulator.cpp
 
-CMakeFiles/untitled17.dir/OrderQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled17.dir/OrderQueue.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dipeshasd/CLionProjects/untitled17/OrderQueue.cpp > CMakeFiles/untitled17.dir/OrderQueue.cpp.i
+CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dipeshasd/CLionProjects/untitled17/OrderQueueSimulator.cpp > CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.i
 
-CMakeFiles/untitled17.dir/OrderQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderQueue.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderQueue.cpp -o CMakeFiles/untitled17.dir/OrderQueue.cpp.s
+CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderQueueSimulator.cpp -o CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.s
 
-CMakeFiles/untitled17.dir/OrderStack.cpp.o: CMakeFiles/untitled17.dir/flags.make
-CMakeFiles/untitled17.dir/OrderStack.cpp.o: ../OrderStack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/untitled17.dir/OrderStack.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled17.dir/OrderStack.cpp.o -c /Users/dipeshasd/CLionProjects/untitled17/OrderStack.cpp
+CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o: CMakeFiles/untitled17.dir/flags.make
+CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o: ../OrderStackSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o -c /Users/dipeshasd/CLionProjects/untitled17/OrderStackSimulator.cpp
 
-CMakeFiles/untitled17.dir/OrderStack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled17.dir/OrderStack.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dipeshasd/CLionProjects/untitled17/OrderStack.cpp > CMakeFiles/untitled17.dir/OrderStack.cpp.i
+CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dipeshasd/CLionProjects/untitled17/OrderStackSimulator.cpp > CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.i
 
-CMakeFiles/untitled17.dir/OrderStack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderStack.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderStack.cpp -o CMakeFiles/untitled17.dir/OrderStack.cpp.s
+CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderStackSimulator.cpp -o CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.s
 
 CMakeFiles/untitled17.dir/Stack.cpp.o: CMakeFiles/untitled17.dir/flags.make
 CMakeFiles/untitled17.dir/Stack.cpp.o: ../Stack.cpp
@@ -300,18 +300,18 @@ CMakeFiles/untitled17.dir/Simulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/Simulation.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/Simulation.cpp -o CMakeFiles/untitled17.dir/Simulation.cpp.s
 
-CMakeFiles/untitled17.dir/OrderProfit.cpp.o: CMakeFiles/untitled17.dir/flags.make
-CMakeFiles/untitled17.dir/OrderProfit.cpp.o: ../OrderProfit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/untitled17.dir/OrderProfit.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled17.dir/OrderProfit.cpp.o -c /Users/dipeshasd/CLionProjects/untitled17/OrderProfit.cpp
+CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o: CMakeFiles/untitled17.dir/flags.make
+CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o: ../OrderProfitSimulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o -c /Users/dipeshasd/CLionProjects/untitled17/OrderProfitSimulator.cpp
 
-CMakeFiles/untitled17.dir/OrderProfit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled17.dir/OrderProfit.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dipeshasd/CLionProjects/untitled17/OrderProfit.cpp > CMakeFiles/untitled17.dir/OrderProfit.cpp.i
+CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dipeshasd/CLionProjects/untitled17/OrderProfitSimulator.cpp > CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.i
 
-CMakeFiles/untitled17.dir/OrderProfit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderProfit.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderProfit.cpp -o CMakeFiles/untitled17.dir/OrderProfit.cpp.s
+CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dipeshasd/CLionProjects/untitled17/OrderProfitSimulator.cpp -o CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.s
 
 CMakeFiles/untitled17.dir/ProfitQueue.cpp.o: CMakeFiles/untitled17.dir/flags.make
 CMakeFiles/untitled17.dir/ProfitQueue.cpp.o: ../ProfitQueue.cpp
@@ -342,11 +342,11 @@ untitled17_OBJECTS = \
 "CMakeFiles/untitled17.dir/PriorityQueue.cpp.o" \
 "CMakeFiles/untitled17.dir/EventList.cpp.o" \
 "CMakeFiles/untitled17.dir/OrderHandler.cpp.o" \
-"CMakeFiles/untitled17.dir/OrderQueue.cpp.o" \
-"CMakeFiles/untitled17.dir/OrderStack.cpp.o" \
+"CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o" \
+"CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o" \
 "CMakeFiles/untitled17.dir/Stack.cpp.o" \
 "CMakeFiles/untitled17.dir/Simulation.cpp.o" \
-"CMakeFiles/untitled17.dir/OrderProfit.cpp.o" \
+"CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o" \
 "CMakeFiles/untitled17.dir/ProfitQueue.cpp.o"
 
 # External object files for target untitled17
@@ -366,11 +366,11 @@ untitled17: CMakeFiles/untitled17.dir/Node.cpp.o
 untitled17: CMakeFiles/untitled17.dir/PriorityQueue.cpp.o
 untitled17: CMakeFiles/untitled17.dir/EventList.cpp.o
 untitled17: CMakeFiles/untitled17.dir/OrderHandler.cpp.o
-untitled17: CMakeFiles/untitled17.dir/OrderQueue.cpp.o
-untitled17: CMakeFiles/untitled17.dir/OrderStack.cpp.o
+untitled17: CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o
+untitled17: CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o
 untitled17: CMakeFiles/untitled17.dir/Stack.cpp.o
 untitled17: CMakeFiles/untitled17.dir/Simulation.cpp.o
-untitled17: CMakeFiles/untitled17.dir/OrderProfit.cpp.o
+untitled17: CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o
 untitled17: CMakeFiles/untitled17.dir/ProfitQueue.cpp.o
 untitled17: CMakeFiles/untitled17.dir/build.make
 untitled17: CMakeFiles/untitled17.dir/link.txt

@@ -5,7 +5,7 @@
 #include "OrderHandler.h"
 #include "Queue.h"
 #include "iostream"
-#include "OrderQueue.h"
+#include "OrderQueueSimulator.h"
 #include "FileReaderHelper.h"
 
 OrderHandler::OrderHandler() : orderToHandleList(new Queue) {}

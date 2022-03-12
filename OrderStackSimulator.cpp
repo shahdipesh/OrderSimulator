@@ -2,15 +2,15 @@
 // Created by Dipesh Asd on 2022-03-11.
 //
 
-#include "OrderStack.h"
+#include "OrderStackSimulator.h"
 #include "Stack.h"
 #include "iostream"
 #include "CompletionEvent.h"
 
 
-OrderStack::OrderStack():listOfEvents(new Stack),itemsInQueue(0),currentTime(0),currentNumOfCompletedOrders(0),totalRevenue(0) {}
+OrderStackSimulator::OrderStackSimulator():listOfEvents(new Stack),itemsInQueue(0),currentTime(0),currentNumOfCompletedOrders(0),totalRevenue(0) {}
 
-void OrderStack::handleOrderEvent(Event *event,LinkedList *eventList) {
+void OrderStackSimulator::handleOrderEvent(Event *event,LinkedList *eventList) {
     this->currentTime = event->getTime();
     if(event->getType()=="arrival"){
         handleArrivalEvent(event,eventList);
@@ -22,7 +22,7 @@ void OrderStack::handleOrderEvent(Event *event,LinkedList *eventList) {
 
 }
 
-void OrderStack::handleArrivalEvent(Event *event,LinkedList *eventList) {
+void OrderStackSimulator::handleArrivalEvent(Event *event,LinkedList *eventList) {
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" arrives ->"; event->getOrderDetails()->printDetails();
     if(this->itemsInQueue==0){
         cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" is getting prepared"<<endl;
@@ -34,7 +34,7 @@ void OrderStack::handleArrivalEvent(Event *event,LinkedList *eventList) {
     itemsInQueue++;
 }
 
-void OrderStack::handleCompleteEvent(Event *event,LinkedList *eventList) {
+void OrderStackSimulator::handleCompleteEvent(Event *event,LinkedList *eventList) {
     this->totalRevenue+=event->getOrderDetails()->getPrice();
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" has been served ->"
         <<"Revenue grew by: "<<event->getOrderDetails()->getPrice()<<endl;
@@ -75,6 +75,3 @@ void OrderStack::handleCompleteEvent(Event *event,LinkedList *eventList) {
     }
 }
 
-void OrderStack::print() {
-
-}
