@@ -393,6 +393,30 @@ OrderHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderHandler.cpp.s
 .PHONY : OrderHandler.cpp.s
 
+OrderProfit.o: OrderProfit.cpp.o
+.PHONY : OrderProfit.o
+
+# target to build an object file
+OrderProfit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfit.cpp.o
+.PHONY : OrderProfit.cpp.o
+
+OrderProfit.i: OrderProfit.cpp.i
+.PHONY : OrderProfit.i
+
+# target to preprocess a source file
+OrderProfit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfit.cpp.i
+.PHONY : OrderProfit.cpp.i
+
+OrderProfit.s: OrderProfit.cpp.s
+.PHONY : OrderProfit.s
+
+# target to generate assembly for a file
+OrderProfit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/OrderProfit.cpp.s
+.PHONY : OrderProfit.cpp.s
+
 OrderQueue.o: OrderQueue.cpp.o
 .PHONY : OrderQueue.o
 
@@ -464,6 +488,30 @@ PriorityQueue.s: PriorityQueue.cpp.s
 PriorityQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/PriorityQueue.cpp.s
 .PHONY : PriorityQueue.cpp.s
+
+ProfitQueue.o: ProfitQueue.cpp.o
+.PHONY : ProfitQueue.o
+
+# target to build an object file
+ProfitQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/ProfitQueue.cpp.o
+.PHONY : ProfitQueue.cpp.o
+
+ProfitQueue.i: ProfitQueue.cpp.i
+.PHONY : ProfitQueue.i
+
+# target to preprocess a source file
+ProfitQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/ProfitQueue.cpp.i
+.PHONY : ProfitQueue.cpp.i
+
+ProfitQueue.s: ProfitQueue.cpp.s
+.PHONY : ProfitQueue.s
+
+# target to generate assembly for a file
+ProfitQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/ProfitQueue.cpp.s
+.PHONY : ProfitQueue.cpp.s
 
 Queue.o: Queue.cpp.o
 .PHONY : Queue.o
@@ -603,6 +651,9 @@ help:
 	@echo "... OrderHandler.o"
 	@echo "... OrderHandler.i"
 	@echo "... OrderHandler.s"
+	@echo "... OrderProfit.o"
+	@echo "... OrderProfit.i"
+	@echo "... OrderProfit.s"
 	@echo "... OrderQueue.o"
 	@echo "... OrderQueue.i"
 	@echo "... OrderQueue.s"
@@ -612,6 +663,9 @@ help:
 	@echo "... PriorityQueue.o"
 	@echo "... PriorityQueue.i"
 	@echo "... PriorityQueue.s"
+	@echo "... ProfitQueue.o"
+	@echo "... ProfitQueue.i"
+	@echo "... ProfitQueue.s"
 	@echo "... Queue.o"
 	@echo "... Queue.i"
 	@echo "... Queue.s"

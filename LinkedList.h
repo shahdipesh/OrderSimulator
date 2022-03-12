@@ -20,7 +20,7 @@ public:
     virtual Node* remove();
     virtual Node *getTop();
     virtual void setTop(Node *top);
-
+    virtual void* findAndRemove(int id);
     int getSize() const;
 
     void setSize(int size);

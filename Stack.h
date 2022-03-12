@@ -11,7 +11,7 @@
 class Stack: public LinkedList {
 public:
     void insert(Event *event) override;
-     void* findAndRemove(int id);
+
 };
 
 
