@@ -3,7 +3,7 @@
 //
 
 #include "Queue.h"
-
+#include "Node.h"
 
 Queue::Queue():LinkedList() {}
 

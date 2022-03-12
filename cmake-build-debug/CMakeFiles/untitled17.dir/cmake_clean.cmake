@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled17.dir/OrderStack.cpp.o"
   "CMakeFiles/untitled17.dir/PriorityQueue.cpp.o"
   "CMakeFiles/untitled17.dir/Queue.cpp.o"
+  "CMakeFiles/untitled17.dir/Simulation.cpp.o"
+  "CMakeFiles/untitled17.dir/Stack.cpp.o"
   "CMakeFiles/untitled17.dir/main.cpp.o"
   "untitled17"
   "untitled17.pdb"

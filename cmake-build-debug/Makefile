@@ -489,6 +489,54 @@ Queue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Queue.cpp.s
 .PHONY : Queue.cpp.s
 
+Simulation.o: Simulation.cpp.o
+.PHONY : Simulation.o
+
+# target to build an object file
+Simulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Simulation.cpp.o
+.PHONY : Simulation.cpp.o
+
+Simulation.i: Simulation.cpp.i
+.PHONY : Simulation.i
+
+# target to preprocess a source file
+Simulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Simulation.cpp.i
+.PHONY : Simulation.cpp.i
+
+Simulation.s: Simulation.cpp.s
+.PHONY : Simulation.s
+
+# target to generate assembly for a file
+Simulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Simulation.cpp.s
+.PHONY : Simulation.cpp.s
+
+Stack.o: Stack.cpp.o
+.PHONY : Stack.o
+
+# target to build an object file
+Stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Stack.cpp.o
+.PHONY : Stack.cpp.o
+
+Stack.i: Stack.cpp.i
+.PHONY : Stack.i
+
+# target to preprocess a source file
+Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Stack.cpp.i
+.PHONY : Stack.cpp.i
+
+Stack.s: Stack.cpp.s
+.PHONY : Stack.s
+
+# target to generate assembly for a file
+Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled17.dir/build.make CMakeFiles/untitled17.dir/Stack.cpp.s
+.PHONY : Stack.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -567,6 +615,12 @@ help:
 	@echo "... Queue.o"
 	@echo "... Queue.i"
 	@echo "... Queue.s"
+	@echo "... Simulation.o"
+	@echo "... Simulation.i"
+	@echo "... Simulation.s"
+	@echo "... Stack.o"
+	@echo "... Stack.i"
+	@echo "... Stack.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

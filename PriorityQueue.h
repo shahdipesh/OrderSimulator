@@ -3,8 +3,6 @@
 //
 
 #pragma once
-
-
 #include "LinkedList.h"
 
 class PriorityQueue: public LinkedList {

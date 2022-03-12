@@ -51,6 +51,7 @@ void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
                 currentNode = currentNode->getNext();
             }
         }
+        if( this->listOfEvents->isEmpty()==0) {
         Event *nextEventToProcess = this->listOfEvents->getTop()->getData();
         //check if order is not expired
         if (currentTime <= nextEventToProcess->getOrderDetails()->getExpTime()) {
@@ -58,9 +59,11 @@ void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
             Event *completionEvent = new CompletionEvent(nextEventToProcess->getOrderDetails(), completionTime,
                                                          nextEventToProcess->getSimulation());
             eventList->insert(completionEvent);
-            cout << "Time :" << this->currentTime << " FoodOrder with orderId ->@" << nextEventToProcess->getOrderDetails()->getId()
+            cout << "Time :" << this->currentTime << " FoodOrder with orderId ->@"
+                 << nextEventToProcess->getOrderDetails()->getId()
                  << " is getting prepared" << endl;
         }
+    }
     }
     else{
         cout<<endl<<".....simulation ended. "<<endl;
@@ -68,6 +71,10 @@ void OrderQueue::handleCompleteEvent(Event *event,LinkedList *eventList) {
         cout<<"- Total revenue: "<<this->totalRevenue<<endl;
 
     }
+}
+
+void OrderQueue::print() {
+
 }
 
 

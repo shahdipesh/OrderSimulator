@@ -7,8 +7,10 @@
 
 
 #include "Queue.h"
+#include "Simulation.h"
 
-class OrderQueue {
+
+class OrderQueue: public Simulation {
 private:
     LinkedList *listOfEvents;
     int itemsInQueue;
@@ -18,7 +20,8 @@ private:
 
 public:
     OrderQueue();
-    void handleOrderEvent(Event *event,LinkedList *eventList);
+    void handleOrderEvent(Event *event,LinkedList *eventList) override;
+    void print() override;
 
 private:
     void handleArrivalEvent(Event *event,LinkedList *eventList);

@@ -15,20 +15,19 @@ void OrderHandler::insert(Event *e) {
 
 }
 
-void OrderHandler::processOrder(LinkedList *eventList,FileReaderHelper *fileReaderHelper,OrderQueue *orderQueue) {
+void OrderHandler::processOrder(LinkedList *eventList,FileReaderHelper *fileReaderHelper,Simulation *simulation) {
     Node *removedNode = this->orderToHandleList->remove();
     Event *removedEvent = removedNode->getData();
 
 
-    //simulation 1 handle arrival event
-    if(removedEvent->getSimulation()==1){
-        orderQueue->handleOrderEvent(removedEvent,eventList);
+        simulation->handleOrderEvent(removedEvent,eventList);
         Event *newEventToAdd = fileReaderHelper->createNewEventFromNextLine("",removedEvent->getSimulation());
         //check if there are further texts in the file
         if(newEventToAdd!=nullptr) {
             eventList->insert(newEventToAdd);
         }
 
-    }
+
+
 
 }

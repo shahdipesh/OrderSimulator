@@ -2,13 +2,9 @@
 // Created by Dipesh Asd on 2022-03-09.
 //
 
-#ifndef UNTITLED17_QUEUE_H
-#define UNTITLED17_QUEUE_H
-
+#pragma once
 
 #include "LinkedList.h"
-#include "Event.h"
-#include "Node.h"
 
 class Queue: public LinkedList {
 
@@ -18,5 +14,3 @@ public:
 
 };
 
-
-#endif //UNTITLED17_QUEUE_H

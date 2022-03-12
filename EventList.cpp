@@ -5,9 +5,10 @@
 #include "EventList.h"
 #include "PriorityQueue.h"
 #include "iostream"
-#include "OrderHandler.h"
 #include "FileReaderHelper.h"
 #include "OrderQueue.h"
+#include "OrderStack.h"
+#include "OrderHandler.h"
 
 EventList::EventList() : eventList(new PriorityQueue) {}
 
@@ -16,13 +17,20 @@ LinkedList *EventList::getEventList() {
 }
 
 void EventList::processEvent(FileReaderHelper *fileReaderHelper) {
-    OrderQueue *orderQueue = new OrderQueue();
+    OrderHandler *orderHandler = new OrderHandler;
+    Simulation *orderQueueSimulator = new OrderQueue;
+    Simulation *orderStackSimulator = new OrderStack;
     while((eventList->isEmpty())!=1) {
         Node *removedNode = this->getEventList()->remove();
         Event *removedEvent = removedNode->getData();
-        OrderHandler *orderHandler = new OrderHandler;
+
         orderHandler->insert(removedEvent);
-        orderHandler->processOrder(this->eventList,fileReaderHelper,orderQueue);
+        if(removedEvent->getSimulation()==1) {
+            orderHandler->processOrder(this->eventList, fileReaderHelper, orderQueueSimulator);
+        }
+        else if (removedEvent->getSimulation()==2){
+            orderHandler->processOrder(this->eventList, fileReaderHelper, orderStackSimulator);
+        }
     }
 
 }

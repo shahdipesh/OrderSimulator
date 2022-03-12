@@ -36,8 +36,11 @@ CMakeFiles/untitled17.dir/EventList.cpp.o: \
  ../Order.h \
  ../OrderHandler.h \
  ../OrderQueue.h \
+ ../OrderStack.h \
  ../PriorityQueue.h \
- ../Queue.h
+ ../Queue.h \
+ ../Simulation.h \
+ ../Stack.h
 CMakeFiles/untitled17.dir/FileReaderHelper.cpp.o: \
  ../ArrivalEvent.h \
  ../Controller.h \
@@ -72,7 +75,8 @@ CMakeFiles/untitled17.dir/OrderHandler.cpp.o: \
  ../OrderHandler.cpp \
  ../OrderHandler.h \
  ../OrderQueue.h \
- ../Queue.h
+ ../Queue.h \
+ ../Simulation.h
 CMakeFiles/untitled17.dir/OrderQueue.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
@@ -81,7 +85,18 @@ CMakeFiles/untitled17.dir/OrderQueue.cpp.o: \
  ../Order.h \
  ../OrderQueue.cpp \
  ../OrderQueue.h \
- ../Queue.h
+ ../Queue.h \
+ ../Simulation.h
+CMakeFiles/untitled17.dir/OrderStack.cpp.o: \
+ ../CompletionEvent.h \
+ ../Event.h \
+ ../LinkedList.h \
+ ../Node.h \
+ ../Order.h \
+ ../OrderStack.cpp \
+ ../OrderStack.h \
+ ../Simulation.h \
+ ../Stack.h
 CMakeFiles/untitled17.dir/PriorityQueue.cpp.o: \
  ../Event.h \
  ../LinkedList.h \
@@ -96,6 +111,20 @@ CMakeFiles/untitled17.dir/Queue.cpp.o: \
  ../Order.h \
  ../Queue.cpp \
  ../Queue.h
+CMakeFiles/untitled17.dir/Simulation.cpp.o: \
+ ../Event.h \
+ ../LinkedList.h \
+ ../Node.h \
+ ../Order.h \
+ ../Simulation.cpp \
+ ../Simulation.h
+CMakeFiles/untitled17.dir/Stack.cpp.o: \
+ ../Event.h \
+ ../LinkedList.h \
+ ../Node.h \
+ ../Order.h \
+ ../Stack.cpp \
+ ../Stack.h
 CMakeFiles/untitled17.dir/main.cpp.o: \
  ../ArrivalEvent.h \
  ../Event.h \
@@ -106,4 +135,5 @@ CMakeFiles/untitled17.dir/main.cpp.o: \
  ../Order.h \
  ../PriorityQueue.h \
  ../Queue.h \
+ ../Stack.h \
  ../main.cpp

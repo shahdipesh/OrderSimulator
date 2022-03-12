@@ -23,6 +23,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/dipeshasd/CLionProjects/untitled17/OrderStack.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/OrderStack.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/PriorityQueue.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/PriorityQueue.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/Queue.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/Queue.cpp.o"
+  "/Users/dipeshasd/CLionProjects/untitled17/Simulation.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/Simulation.cpp.o"
+  "/Users/dipeshasd/CLionProjects/untitled17/Stack.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/Stack.cpp.o"
   "/Users/dipeshasd/CLionProjects/untitled17/main.cpp" "/Users/dipeshasd/CLionProjects/untitled17/cmake-build-debug/CMakeFiles/untitled17.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

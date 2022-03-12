@@ -170,6 +170,18 @@
 		<Unit filename="/Users/dipeshasd/CLionProjects/untitled17/Queue.h">
 			<Option target="untitled17"/>
 		</Unit>
+		<Unit filename="/Users/dipeshasd/CLionProjects/untitled17/Simulation.cpp">
+			<Option target="untitled17"/>
+		</Unit>
+		<Unit filename="/Users/dipeshasd/CLionProjects/untitled17/Simulation.h">
+			<Option target="untitled17"/>
+		</Unit>
+		<Unit filename="/Users/dipeshasd/CLionProjects/untitled17/Stack.cpp">
+			<Option target="untitled17"/>
+		</Unit>
+		<Unit filename="/Users/dipeshasd/CLionProjects/untitled17/Stack.h">
+			<Option target="untitled17"/>
+		</Unit>
 		<Unit filename="/Users/dipeshasd/CLionProjects/untitled17/main.cpp">
 			<Option target="untitled17"/>
 		</Unit>

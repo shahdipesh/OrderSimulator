@@ -16,7 +16,7 @@ private:
 public:
     OrderHandler();
     void insert(Event *e);
-    void processOrder(LinkedList *eventList,FileReaderHelper *fileReaderHelper,OrderQueue *orderQueue);
+    void processOrder(LinkedList *eventList,FileReaderHelper *fileReaderHelper,Simulation *simulation);
 
 };
 

@@ -19,7 +19,7 @@ void Controller::handleMessage(int id, int expiryTime, string mealName, int numI
 
    Order *order = new Order(id,expiryTime,mealName,numIngredients);
 
-   ArrivalEvent *event = new ArrivalEvent(order,id,version);
+   ArrivalEvent *event = new ArrivalEvent(order,version,id);
 
    EventList *eventList = new EventList;
    eventList->getEventList()->insert(event);
