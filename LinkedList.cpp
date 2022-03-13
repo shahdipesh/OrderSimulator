@@ -8,10 +8,10 @@
 LinkedList::LinkedList() : top(nullptr),size(0) {}
 
 void LinkedList::print() {
-    Node *top =this->top;
-    while(top != nullptr){
-        cout << top->getData()->getOrderDetails()->getTimeStamp() << "--->";
-        top=top->getNext();
+    Node *curr =this->top;
+    while(curr != nullptr){
+        cout << curr->getData()->getOrderDetails()->getTimeStamp() << "--->";
+        curr=curr->getNext();
     }
     cout<<endl;
 
@@ -34,7 +34,7 @@ int LinkedList::isEmpty() {
     }
 }
 
-Node *LinkedList::remove() {
+Node * LinkedList::remove() {
         Node *curr = nullptr;
         if(!this->isEmpty()) {
             curr = this->getTop();
@@ -42,7 +42,7 @@ Node *LinkedList::remove() {
         }
         return curr;
 }
-void *LinkedList::findAndRemove(int id) {
+void LinkedList::findAndRemove(int id) {
     if(this->isEmpty()==0){
         int found =0;
         Node *curr =this->getTop();

@@ -8,8 +8,18 @@
 #include "LinkedList.h"
 
 class Simulation {
-public:
 
-    virtual void handleOrderEvent(Event *event,LinkedList *eventList)=0;
+public:
+    Simulation(LinkedList *linkedList);
+    void handleOrderEvent(Event *event,LinkedList *eventList);
+
+private:
+    LinkedList *listOfEvents;
+    int itemsInQueue;
+    int currentTime;
+    int currentNumOfCompletedOrders;
+    float totalRevenue;
+    void handleArrivalEvent(Event *event,LinkedList *eventList);
+    void handleCompleteEvent(Event *event,LinkedList *eventList);
 };
 

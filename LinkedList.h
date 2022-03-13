@@ -2,10 +2,7 @@
 // Created by Dipesh Asd on 2022-03-09.
 //
 
-#ifndef UNTITLED17_LINKEDLIST_H
-#define UNTITLED17_LINKEDLIST_H
-
-
+#pragma once
 #include "Node.h"
 
 class LinkedList {
@@ -20,12 +17,10 @@ public:
     virtual Node* remove();
     virtual Node *getTop();
     virtual void setTop(Node *top);
-    virtual void* findAndRemove(int id);
+    virtual void findAndRemove(int id);
     int getSize() const;
 
     void setSize(int size);
 
 };
 
-
-#endif //UNTITLED17_LINKEDLIST_H
