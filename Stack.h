@@ -2,8 +2,7 @@
 // Created by Dipesh Asd on 2022-03-11.
 //
 
-#ifndef UNTITLED17_STACK_H
-#define UNTITLED17_STACK_H
+#pragma once
 
 
 #include "LinkedList.h"
@@ -14,5 +13,3 @@ public:
 
 };
 
-
-#endif //UNTITLED17_STACK_H

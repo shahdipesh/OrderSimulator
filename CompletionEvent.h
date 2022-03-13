@@ -2,8 +2,7 @@
 // Created by Dipesh Asd on 2022-03-10.
 //
 
-#ifndef UNTITLED17_COMPLETIONEVENT_H
-#define UNTITLED17_COMPLETIONEVENT_H
+#pragma once
 
 
 #include "Event.h"
@@ -16,4 +15,4 @@ public:
 };
 
 
-#endif //UNTITLED17_COMPLETIONEVENT_H
+

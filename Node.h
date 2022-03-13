@@ -2,8 +2,7 @@
 // Created by Dipesh Asd on 2022-03-10.
 //
 
-#ifndef UNTITLED17_NODE_H
-#define UNTITLED17_NODE_H
+#pragma once
 
 
 #include "Event.h"
@@ -26,6 +25,3 @@ public:
     void setNext(Node *next);
 
 };
-
-
-#endif //UNTITLED17_NODE_H

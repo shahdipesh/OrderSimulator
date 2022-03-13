@@ -2,8 +2,7 @@
 // Created by Dipesh Asd on 2022-03-07.
 //
 
-#ifndef UNTITLED17_FILEREADERHELPER_H
-#define UNTITLED17_FILEREADERHELPER_H
+#pragma once
 
 
 #include <fstream>
@@ -23,4 +22,3 @@ public:
 };
 
 
-#endif //UNTITLED17_FILEREADERHELPER_H

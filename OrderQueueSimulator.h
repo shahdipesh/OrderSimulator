@@ -3,8 +3,6 @@
 //
 
 #pragma once
-
-
 #include "Queue.h"
 #include "Simulation.h"
 

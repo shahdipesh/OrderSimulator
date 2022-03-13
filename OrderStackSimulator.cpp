@@ -4,7 +4,6 @@
 
 #include "OrderStackSimulator.h"
 #include "Stack.h"
-#include "iostream"
 #include "CompletionEvent.h"
 
 

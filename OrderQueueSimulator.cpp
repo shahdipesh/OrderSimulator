@@ -3,7 +3,6 @@
 //
 
 #include "OrderQueueSimulator.h"
-#include "iostream"
 #include "CompletionEvent.h"
 
 

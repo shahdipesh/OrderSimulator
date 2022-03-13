@@ -3,8 +3,6 @@
 //
 
 #include "OrderProfitSimulator.h"
-#include "Stack.h"
-#include "iostream"
 #include "CompletionEvent.h"
 
 

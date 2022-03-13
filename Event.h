@@ -2,8 +2,7 @@
 // Created by Dipesh Asd on 2022-03-09.
 //
 
-#ifndef UNTITLED17_EVENT_H
-#define UNTITLED17_EVENT_H
+#pragma once
 #include <string>
 #include "Order.h"
 
@@ -38,5 +37,3 @@ public:
 
 };
 
-
-#endif //UNTITLED17_EVENT_H
