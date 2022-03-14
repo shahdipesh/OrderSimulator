@@ -7,6 +7,10 @@
 
 Queue::Queue():LinkedList() {}
 
+
+// PURPOSE:  Overrides  insert method of Linked list to insert events as a queue
+// PARAMETERS:
+//     Event *event: Event to insert
 void Queue::insert(Event *event) {
     Node *curr = this->getTop();
     Node *node = new Node(event,nullptr);

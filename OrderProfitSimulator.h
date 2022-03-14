@@ -1,5 +1,8 @@
+// CLASS: OrderProfitSimulator
 //
-// Created by Dipesh Asd on 2022-03-12.
+// Author: Dipesh Shah, 7882947
+//
+// REMARKS: Defines the Simulation type where we handle 3rd simulation
 //
 
 #pragma once
@@ -10,6 +13,7 @@
 class OrderProfitSimulator:public Simulation {
 
 public:
+    //Constructor
     OrderProfitSimulator();
 
 

@@ -1,5 +1,9 @@
+// CLASS: Simulation
 //
-// Created by Dipesh Asd on 2022-03-11.
+// Author: Dipesh Shah, 7882947
+//
+// REMARKS: This class is where majority of the tasks happen based on the event we get
+//
 //
 
 #pragma once

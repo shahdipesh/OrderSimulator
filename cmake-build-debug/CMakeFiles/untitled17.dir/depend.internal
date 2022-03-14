@@ -21,7 +21,6 @@ CMakeFiles/untitled17.dir/Controller.cpp.o
  /Users/dipeshasd/CLionProjects/untitled17/LinkedList.h
  /Users/dipeshasd/CLionProjects/untitled17/Node.h
  /Users/dipeshasd/CLionProjects/untitled17/Order.h
- /Users/dipeshasd/CLionProjects/untitled17/PriorityQueue.h
 CMakeFiles/untitled17.dir/Event.cpp.o
  /Users/dipeshasd/CLionProjects/untitled17/Event.cpp
  /Users/dipeshasd/CLionProjects/untitled17/Event.h
@@ -90,7 +89,6 @@ CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o
  /Users/dipeshasd/CLionProjects/untitled17/PriorityQueue.h
  /Users/dipeshasd/CLionProjects/untitled17/ProfitQueue.h
  /Users/dipeshasd/CLionProjects/untitled17/Simulation.h
- /Users/dipeshasd/CLionProjects/untitled17/Stack.h
 CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o
  /Users/dipeshasd/CLionProjects/untitled17/CompletionEvent.h
  /Users/dipeshasd/CLionProjects/untitled17/Event.h
@@ -149,14 +147,7 @@ CMakeFiles/untitled17.dir/Stack.cpp.o
  /Users/dipeshasd/CLionProjects/untitled17/Stack.cpp
  /Users/dipeshasd/CLionProjects/untitled17/Stack.h
 CMakeFiles/untitled17.dir/main.cpp.o
- /Users/dipeshasd/CLionProjects/untitled17/ArrivalEvent.h
  /Users/dipeshasd/CLionProjects/untitled17/Event.h
  /Users/dipeshasd/CLionProjects/untitled17/FileReaderHelper.h
- /Users/dipeshasd/CLionProjects/untitled17/LinkedList.h
- /Users/dipeshasd/CLionProjects/untitled17/Menu.h
- /Users/dipeshasd/CLionProjects/untitled17/Node.h
  /Users/dipeshasd/CLionProjects/untitled17/Order.h
- /Users/dipeshasd/CLionProjects/untitled17/PriorityQueue.h
- /Users/dipeshasd/CLionProjects/untitled17/Queue.h
- /Users/dipeshasd/CLionProjects/untitled17/Stack.h
  /Users/dipeshasd/CLionProjects/untitled17/main.cpp

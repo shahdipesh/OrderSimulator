@@ -4,6 +4,10 @@
 
 #include "ProfitQueue.h"
 
+
+// PURPOSE:  Overrides  insert method of Linked list to insert events based on cost for the order
+// PARAMETERS:
+//     Event *event: Event to insert
 void ProfitQueue::insert(Event *event) {
 
     Node *node = new Node(event,nullptr);

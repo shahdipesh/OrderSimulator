@@ -17,6 +17,12 @@ LinkedList *EventList::getEventList() {
     return eventList;
 }
 
+// PURPOSE:    When we receive an event into the event list we queue it and then send it to Order Handler based
+//              on the simulation type
+// PARAMETERS:
+//     FileReaderHelper: We receive an reference to file reader so that we can pass it on to the order Controller
+//                          which will allow us to read a new line from the file and create a event based on that
+// Returns: void
 void EventList::processEvent(FileReaderHelper *fileReaderHelper) {
     OrderHandler *orderHandler = new OrderHandler;
     Simulation *orderQueueSimulator = new OrderQueueSimulator;

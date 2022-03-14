@@ -10,6 +10,11 @@
 
 Simulation::Simulation(LinkedList *linkedList):listOfEvents(linkedList),itemsInQueue(0),currentTime(0),currentNumOfCompletedOrders(0),totalRevenue(0) {}
 
+
+// PURPOSE: Based on the event passed to the class we call appropriate method
+// PARAMETERS:
+//     Event *event: event that is passed into the class
+//     LinkedList *eventList: reference to the event list where we insert events based on conditions
 void Simulation::handleOrderEvent(Event *event,LinkedList *eventList) {
     this->currentTime = event->getTime();
     if(event->getType()=="arrival"){
@@ -22,6 +27,11 @@ void Simulation::handleOrderEvent(Event *event,LinkedList *eventList) {
 
 }
 
+// PURPOSE: If the event is of type arrival we call this method which print arrival message and then either processes the order
+//          right away or puts it in order queue/stack/or priority queue based on the simulation
+// PARAMETERS:
+//     Event *event: event that is passed into the class
+//     LinkedList *eventList: reference to the event list where we insert events based on conditions
 void Simulation::handleArrivalEvent(Event *event,LinkedList *eventList) {
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" arrives ->"; event->getOrderDetails()->printDetails();
     if(this->itemsInQueue==0){
@@ -34,6 +44,11 @@ void Simulation::handleArrivalEvent(Event *event,LinkedList *eventList) {
     itemsInQueue++;
 }
 
+// PURPOSE: If the event is of type complete we call this method which print complete message and then removes the order from
+//             the order list and processes the next order in queue
+// PARAMETERS:
+//     Event *event: event that is passed into the class
+//     LinkedList *eventList: reference to the event list where we insert events based on conditions
 void Simulation::handleCompleteEvent(Event *event,LinkedList *eventList) {
     this->totalRevenue+=event->getOrderDetails()->getPrice();
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" has been served ->"

@@ -1,5 +1,8 @@
+// CLASS: ProfitQueue
 //
-// Created by Dipesh Asd on 2022-03-12.
+// Author: Dipesh Shah, 7882947
+//
+// REMARKS: Defines the class that is child of linked list which inserts items based on cost of food
 //
 
 #pragma once

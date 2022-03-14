@@ -7,6 +7,7 @@
 
 LinkedList::LinkedList() : top(nullptr),size(0) {}
 
+// PURPOSE:    Print the contents of List
 void LinkedList::print() {
     Node *curr =this->top;
     while(curr != nullptr){
@@ -25,6 +26,8 @@ void LinkedList::setTop(Node *top) {
     LinkedList::top = top;
 }
 
+// PURPOSE:   Tell if the list is empty
+// Returns: 0 if not empty and 1 if empty
 int LinkedList::isEmpty() {
     if(this->getTop()==nullptr){
         return 1;
@@ -34,6 +37,8 @@ int LinkedList::isEmpty() {
     }
 }
 
+// PURPOSE:  Deletes the top node of the list
+// Returns: Node deleted
 Node * LinkedList::remove() {
         Node *curr = nullptr;
         if(!this->isEmpty()) {
@@ -42,6 +47,10 @@ Node * LinkedList::remove() {
         }
         return curr;
 }
+
+// PURPOSE: Finds the node with a given id and deletes it
+// PARAMETERS:
+    // id: Event's order id.
 void LinkedList::findAndRemove(int id) {
     if(this->isEmpty()==0){
         int found =0;

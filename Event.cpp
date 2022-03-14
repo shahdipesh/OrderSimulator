@@ -24,7 +24,7 @@ void Event::setOrderDetails(Order *orderDetails) {
     Event::orderDetails = orderDetails;
 }
 
-int Event::getTime() const {
+int Event::getTime() {
     return time;
 }
 

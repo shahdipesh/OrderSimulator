@@ -20,8 +20,7 @@ CMakeFiles/untitled17.dir/Controller.cpp.o: \
  ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
- ../Order.h \
- ../PriorityQueue.h
+ ../Order.h
 CMakeFiles/untitled17.dir/Event.cpp.o: \
  ../Event.cpp \
  ../Event.h \
@@ -89,8 +88,7 @@ CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o: \
  ../OrderProfitSimulator.h \
  ../PriorityQueue.h \
  ../ProfitQueue.h \
- ../Simulation.h \
- ../Stack.h
+ ../Simulation.h
 CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
@@ -149,14 +147,7 @@ CMakeFiles/untitled17.dir/Stack.cpp.o: \
  ../Stack.cpp \
  ../Stack.h
 CMakeFiles/untitled17.dir/main.cpp.o: \
- ../ArrivalEvent.h \
  ../Event.h \
  ../FileReaderHelper.h \
- ../LinkedList.h \
- ../Menu.h \
- ../Node.h \
  ../Order.h \
- ../PriorityQueue.h \
- ../Queue.h \
- ../Stack.h \
  ../main.cpp

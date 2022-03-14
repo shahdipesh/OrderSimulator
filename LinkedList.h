@@ -1,7 +1,9 @@
+// CLASS: LinkedList
 //
-// Created by Dipesh Asd on 2022-03-09.
+// Author: Dipesh Shah, 7882947
 //
-
+// REMARKS: Defines the Linked-list class which will hold our events
+//
 #pragma once
 #include "Node.h"
 

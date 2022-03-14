@@ -1,7 +1,9 @@
+// CLASS: OrderQueueSimulator
 //
-// Created by Dipesh Asd on 2022-03-10.
+// Author: Dipesh Shah, 7882947
 //
-
+// REMARKS: Defines the class to handle 1st simulation
+//
 #pragma once
 #include "Queue.h"
 #include "Simulation.h"

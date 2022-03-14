@@ -1,6 +1,10 @@
+// CLASS: CompletionEvent
 //
-// Created by Dipesh Asd on 2022-03-10.
+// Author: Dipesh Shah, 7882947
 //
+// REMARKS: Defines the Completion Event
+//
+//-----------------------------------------
 
 #pragma once
 
@@ -10,6 +14,7 @@
 class CompletionEvent: public Event {
 
 public:
+    //Constructor for the class
     CompletionEvent(Order *orderDetails, int time,int simulation);
 
 };

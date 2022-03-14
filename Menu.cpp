@@ -4,7 +4,12 @@
 
 #include "Menu.h"
 
-float Menu::getFoodPrice(string mealName, float numIngredients) {
+// PURPOSE:  Get food price based on the name of the meal and number of ingredients in it.
+// PARAMETERS:
+//  string mealName: name of the meal
+//  float numIngredients: number of ingre
+// Returns: The total price of the meal
+float Menu::getFoodPrice(string mealName, int numIngredients) {
    float basePrice =0;
    float finalPrice=0;
    if(mealName=="Salad"){
@@ -29,6 +34,11 @@ float Menu::getFoodPrice(string mealName, float numIngredients) {
    return finalPrice;
 }
 
+// PURPOSE:  Get food preparation time based on mealname and number of ingredients
+// PARAMETERS:
+//  string mealName: name of the meal
+//  int numIngredients: number of ingredients
+// Returns: The total time taken to prepare the meal
 int Menu::getPreparationTime(string mealName, int numIngredients) {
     int result =0;
     int baseTime =0;

@@ -1,5 +1,8 @@
+// CLASS: Stack
 //
-// Created by Dipesh Asd on 2022-03-11.
+// Author: Dipesh Shah, 7882947
+//
+// REMARKS: extends linked list class and then overrides the insert method to implement a stack
 //
 
 #pragma once

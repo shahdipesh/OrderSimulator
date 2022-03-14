@@ -55,8 +55,6 @@ int FileReaderHelper::readNextLineFromFile(string line) {
             }
             counter++;
         }
-        //To show that we grabbed all the relevant information:
-//        cout << "time=" << time << " expiry=" << expiry << " meal=" << meal << " numIngredients=" << numIngredients << endl;
         Controller *controller = new Controller();
         controller->handleMessage(time,expiry,meal,numIngredients,this->version,this);
         return 1;
@@ -68,7 +66,11 @@ int FileReaderHelper::readNextLineFromFile(string line) {
 
 
 }
-
+// PURPOSE:    Reads next line from a file and creates an event based on that
+// PARAMETERS:
+//     string line: To tokenize the line
+//     int simulation: which simulation is the event related to
+// Returns: Event
 Event *FileReaderHelper::createNewEventFromNextLine(string line,int simulation) {
     if(getline(inputFile, line))  //gets the next line from the file and saves it in 'line', if there is one
     {

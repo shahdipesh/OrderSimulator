@@ -1,7 +1,9 @@
+// CLASS: OrderHandler
 //
-// Created by Dipesh Asd on 2022-03-10.
+// Author: Dipesh Shah, 7882947
 //
-
+// REMARKS: Handles a given order passed to the class from Order controller
+//
 #pragma once
 
 

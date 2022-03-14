@@ -1,6 +1,10 @@
+// CLASS: ArrivalEvent
 //
-// Created by Dipesh Asd on 2022-03-10.
+// Author: Dipesh Shah, 7882947
 //
+// REMARKS: Defines the Arrival Event
+//
+//-----------------------------------------
 
 #pragma once
 
@@ -10,6 +14,7 @@
 class ArrivalEvent: public Event {
 
 public:
+    //Constructor for the class
     ArrivalEvent(Order *orderDetails, int time,int simulation);
 
 };

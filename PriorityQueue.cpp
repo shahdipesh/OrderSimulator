@@ -1,8 +1,9 @@
-//
-// Created by Dipesh Asd on 2022-03-10.
-//
 
 #include "PriorityQueue.h"
+
+// PURPOSE:  Overrides  insert method of Linked list to insert events as a queue
+// PARAMETERS:
+//     Event *event: Event to insert
 
 void PriorityQueue::insert(Event *event) {
   Node *node = new Node(event,nullptr);

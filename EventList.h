@@ -1,7 +1,10 @@
+// CLASS: EventList
 //
-// Created by Dipesh Asd on 2022-03-10.
+// Author: Dipesh Shah, 7882947
 //
-
+// REMARKS: Defines the class which contails all the list of events in current and future
+//
+//-----------------------------------------
 #pragma once
 
 

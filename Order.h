@@ -1,7 +1,9 @@
+// CLASS: Order
 //
-// Created by Dipesh Asd on 2022-03-09.
+// Author: Dipesh Shah, 7882947
 //
-
+// REMARKS: Defines the details that a Order contains
+//
 #pragma once
 
 #include <string>
@@ -12,12 +14,12 @@ class Order {
 
 private:
     int id;
-   int timeStamp;
-   int expTime;
+   int timeStamp;   //time at which order came
+   int expTime;     // time at which order expires
    string mealName;
    int numIngredients;
    float price;
-   int timeRequired;
+   int timeRequired;        // time required to prepare the meal
 
 public:
     Order(int id, int expTime, string mealName, int numIngredients);
