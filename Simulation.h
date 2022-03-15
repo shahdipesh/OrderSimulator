@@ -10,12 +10,13 @@
 
 #include "Event.h"
 #include "LinkedList.h"
+#include "FileReaderHelper.h"
 
 class Simulation {
 
 public:
     Simulation(LinkedList *linkedList);
-    void handleOrderEvent(Event *event,LinkedList *eventList);
+    void handleOrderEvent(Event *event,LinkedList *eventList,FileReaderHelper *fileReaderHelper);
 
 private:
     LinkedList *listOfEvents;
@@ -24,6 +25,6 @@ private:
     int currentNumOfCompletedOrders;
     float totalRevenue;
     void handleArrivalEvent(Event *event,LinkedList *eventList);
-    void handleCompleteEvent(Event *event,LinkedList *eventList);
+    void handleCompleteEvent(Event *event,LinkedList *eventList,FileReaderHelper *fileReaderHelper);
 };
 

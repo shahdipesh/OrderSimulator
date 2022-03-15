@@ -22,6 +22,7 @@ public:
      FileReaderHelper(int argc, char* argv[]);
     int readNextLineFromFile(std::string line);
     Event *createNewEventFromNextLine(string line,int simulation);
+    int hasNextLine();
 };
 
 

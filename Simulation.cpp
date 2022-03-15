@@ -7,6 +7,7 @@
 #include "LinkedList.h"
 #include "CompletionEvent.h"
 #include "iostream"
+#include "FileReaderHelper.h"
 
 Simulation::Simulation(LinkedList *linkedList):listOfEvents(linkedList),itemsInQueue(0),currentTime(0),currentNumOfCompletedOrders(0),totalRevenue(0) {}
 
@@ -15,13 +16,13 @@ Simulation::Simulation(LinkedList *linkedList):listOfEvents(linkedList),itemsInQ
 // PARAMETERS:
 //     Event *event: event that is passed into the class
 //     LinkedList *eventList: reference to the event list where we insert events based on conditions
-void Simulation::handleOrderEvent(Event *event,LinkedList *eventList) {
+void Simulation::handleOrderEvent(Event *event,LinkedList *eventList,FileReaderHelper *fileReaderHelper) {
     this->currentTime = event->getTime();
     if(event->getType()=="arrival"){
         handleArrivalEvent(event,eventList);
     }
     else{
-        handleCompleteEvent(event,eventList);
+        handleCompleteEvent(event,eventList,fileReaderHelper);
     }
 
 
@@ -49,12 +50,13 @@ void Simulation::handleArrivalEvent(Event *event,LinkedList *eventList) {
 // PARAMETERS:
 //     Event *event: event that is passed into the class
 //     LinkedList *eventList: reference to the event list where we insert events based on conditions
-void Simulation::handleCompleteEvent(Event *event,LinkedList *eventList) {
+void Simulation::handleCompleteEvent(Event *event,LinkedList *eventList,FileReaderHelper *fileReaderHelper) {
     this->totalRevenue+=event->getOrderDetails()->getPrice();
     cout<<"Time :"<<this->currentTime<<" FoodOrder with orderId ->@"<<event->getOrderDetails()->getId()<<" has been served ->"
         <<"Revenue grew by: "<<event->getOrderDetails()->getPrice()<<endl;
     this->listOfEvents->findAndRemove(event->getOrderDetails()->getId());
     this->currentNumOfCompletedOrders++;
+    itemsInQueue--;
     if( this->listOfEvents->isEmpty()==0) {
         Node *currentNode = this->listOfEvents->getTop();
         int nextNodeIsValid = 0;
@@ -62,6 +64,7 @@ void Simulation::handleCompleteEvent(Event *event,LinkedList *eventList) {
             if (currentNode->getData()->getOrderDetails()->getExpTime() < this->currentTime) {
                 this->listOfEvents->findAndRemove(currentNode->getData()->getOrderDetails()->getId());
                 currentNode = currentNode->getNext();
+                itemsInQueue--;
             } else {
                 nextNodeIsValid = 1;
                 currentNode = currentNode->getNext();
@@ -81,17 +84,13 @@ void Simulation::handleCompleteEvent(Event *event,LinkedList *eventList) {
                      << nextEventToProcess->getOrderDetails()->getId()
                      << " is getting prepared" << endl;
             }
-        } else {
+        }
+    }
+        if(eventList->isEmpty()==1 && (fileReaderHelper->hasNextLine()==0) ) {
             cout << endl << ".....simulation ended. " << endl;
             cout << "- Total number of orders completed: " << this->currentNumOfCompletedOrders << endl;
             cout << "- Total revenue: " << this->totalRevenue << endl;
-
         }
-    }
-    else {
-        cout << endl << ".....simulation ended. " << endl;
-        cout << "- Total number of orders completed: " << this->currentNumOfCompletedOrders << endl;
-        cout << "- Total revenue: " << this->totalRevenue << endl;
 
-    }
+
 }

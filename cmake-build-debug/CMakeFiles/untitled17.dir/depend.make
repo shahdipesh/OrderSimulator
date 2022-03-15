@@ -81,6 +81,7 @@ CMakeFiles/untitled17.dir/OrderHandler.cpp.o: \
 CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
+ ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
@@ -92,6 +93,7 @@ CMakeFiles/untitled17.dir/OrderProfitSimulator.cpp.o: \
 CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
+ ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
@@ -102,6 +104,7 @@ CMakeFiles/untitled17.dir/OrderQueueSimulator.cpp.o: \
 CMakeFiles/untitled17.dir/OrderStackSimulator.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
+ ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \
@@ -134,6 +137,7 @@ CMakeFiles/untitled17.dir/Queue.cpp.o: \
 CMakeFiles/untitled17.dir/Simulation.cpp.o: \
  ../CompletionEvent.h \
  ../Event.h \
+ ../FileReaderHelper.h \
  ../LinkedList.h \
  ../Node.h \
  ../Order.h \

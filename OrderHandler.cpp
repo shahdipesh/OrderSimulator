@@ -25,7 +25,7 @@ void OrderHandler::processOrder(LinkedList *eventList,FileReaderHelper *fileRead
     Event *removedEvent = removedNode->getData();
 
 
-        simulation->handleOrderEvent(removedEvent,eventList);
+        simulation->handleOrderEvent(removedEvent,eventList,fileReaderHelper);
         Event *newEventToAdd = fileReaderHelper->createNewEventFromNextLine("",removedEvent->getSimulation());
         //check if there are further texts in the file
         if(newEventToAdd!=nullptr) {

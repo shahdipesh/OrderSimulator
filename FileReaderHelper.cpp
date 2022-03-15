@@ -111,6 +111,15 @@ Event *FileReaderHelper::createNewEventFromNextLine(string line,int simulation) 
 
 }
 
+int FileReaderHelper::hasNextLine(){
+    if(inputFile.peek()==EOF){
+        return 0;
+    }
+    else{
+        return 1;
+    }
+}
+
 
 
 
