@@ -7,14 +7,15 @@
 #include <utility>
 #include "iostream"
 using namespace std;
-
+static int nextId = 1;
 Order::Order(int timeStamp, int expTime, string mealName, int numIngredients) : timeStamp(timeStamp), expTime(expTime),
                                                                          mealName(mealName),
                                                                          numIngredients(numIngredients) {
     Menu *m = new Menu;
     this->price=m->getFoodPrice(mealName,numIngredients);
     this->timeRequired=m->getPreparationTime(mealName,numIngredients);
-    this->id = timeStamp*7+1; //giving random id to order
+    this->id = nextId; //giving random id to order
+    nextId++;
 
 }
 int Order::getTimeStamp() const {
